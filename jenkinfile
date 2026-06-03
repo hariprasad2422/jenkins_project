@@ -44,7 +44,7 @@ pipeline {
                 ssh -o StrictHostKeyChecking=no \
                 -i ${PEM_FILE} \
                 ${TOMCAT_USER}@${TOMCAT_HOST} \
-                "ls -ltr /opt/tomcat/webapps | grep java21"
+                "ls -ltr /opt/tomcat/webapps "
                 '''
             }
         }
