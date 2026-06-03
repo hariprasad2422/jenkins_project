@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TOMCAT_HOST = "172.31.29.49"
+        TOMCAT_HOST = "10.0.12.123"
         TOMCAT_USER = "ubuntu"
         PEM_FILE = "/var/lib/jenkins/.ssh/tarun.pem"
     }
