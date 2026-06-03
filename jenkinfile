@@ -32,7 +32,7 @@ pipeline {
                 sh '''
                 scp -o StrictHostKeyChecking=no \
                 -i ${PEM_FILE} \
-                target/java21-tomcat10-demo-1.0.0.war \
+                target/demo-project.war \
                 ${TOMCAT_USER}@${TOMCAT_HOST}:/opt/tomcat/webapps/
                 '''
             }
